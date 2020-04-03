@@ -1,0 +1,89 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    margin: 5px;
+    transition: all 1s;
+}
+img:hover{
+    transform: scale(1.1)
+}
+.searchBar {
+    background-image: url("https://s23527.pcdn.co/wp-content/uploads/2017/04/Crab-Nebula-as-Seen-by-Herschel-and-Hubble-768x768.jpg.optimal.jpg");
+    padding: 2em;
+    margin: 15px auto;
+
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+}
+
+input[type="search"] {
+    border: none;
+    whitespace: wrap;
+    border-radius: 5px 5px 5px 5px;
+    background: #E9E9E9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.35em 0.75em;
+    border: none;
+    font-size: 1.1em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 3em;
+
+    flex: 2 0 250px;
+}
+
+input[type="search"]:focus {
+    background: white;
+    color: black;
+    letter-spacing: .1em;
+    transition: background 400ms ease-in-out;
+    outline: none;
+}
+
+button {
+    flex: 1 0 90px;
+    max-height: 3em;
+    font-size: 1.1em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    border-radius: 0px 5px 5px 0px;
+    background: #0080c0;
+    color: white;
+    border: none;
+    padding: 0.35em 0.75em;
+    cursor: pointer;
+}
+button:hover {
+    background: #008aeb;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: lighter;
+    font-family: -apple-system;
+}
+@media (max-width: 450px) {
+    body {
+        width: 100%;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+}
