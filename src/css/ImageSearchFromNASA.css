@@ -2,16 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 img{
     margin: 5px;
     transition: all 1s;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
 }
 img:hover{
     transform: scale(1.1)
 }
 .searchBar {
-    background-image: url("https://s23527.pcdn.co/wp-content/uploads/2017/04/Crab-Nebula-as-Seen-by-Herschel-and-Hubble-768x768.jpg.optimal.jpg");
+    background-image:url('https://s23527.pcdn.co/wp-content/uploads/2017/04/Crab-Nebula-as-Seen-by-Herschel-and-Hubble-768x768.jpg.optimal.jpg');
     padding: 2em;
     margin: 15px auto;
 
