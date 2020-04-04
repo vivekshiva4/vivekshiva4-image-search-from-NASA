@@ -7,6 +7,7 @@ class ImageSearchFromNASA extends React.Component{
     constructor(props){
         super(props)
         const displayName = 'Solar System'
+
         this.state = {
             errorMessage: null,
             searchInput : displayName,
@@ -17,6 +18,7 @@ class ImageSearchFromNASA extends React.Component{
         this._onChange = this._onChange.bind(this)
         this._enterPressed = this._enterPressed.bind(this)
     }
+
 
     componentDidMount() {
         this._getImagesFromNasa()
@@ -84,6 +86,7 @@ class ImageSearchFromNASA extends React.Component{
     }
     render(){
         let state = this.state
+
         return(
             <div>
                 <h1>NASA Image Gallery</h1>
@@ -95,7 +98,7 @@ class ImageSearchFromNASA extends React.Component{
                 </div>
 
                 {/*loader*/}
-                { state.loading && <img  src="https://cdn.dribbble.com/users/3337757/screenshots/6825268/076_-loading_animated_dribbble_copy.gif" /> }
+                { state.loading && <div className="loader"><img src="https://cdn.dribbble.com/users/3337757/screenshots/6825268/076_-loading_animated_dribbble_copy.gif" /></div> }
 
                 <div className="container">
                     {function () {
