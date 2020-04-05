@@ -10,7 +10,7 @@ Project is created with:
 To run this project, install it locally using npm:
 
 ```
-$ cd image-search-from-NASA
+$ cd vivekshiva4-image-search-from-NASA
 $ npm install
 $ npm start
 open the SPA in port 3000
